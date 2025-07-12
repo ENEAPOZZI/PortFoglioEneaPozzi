@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il Mio Portfolio</title>
+
+  <!-- CSS/reset -->
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google fonts - Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+ 
+  <!-- CSS/main -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+    <body>
+
+        <main>
+
+        <header id="header" > 
+   
+            <div id="left-side-header">
+
+                <div id="circle">
+                    <span id="circle-tx">EP</span>
+                </div>
+
+                <div id="sideof-circle">
+                    <span id="side-circle-tx">Enea Pozzi</span>
+                </div>
+
+            </div>
+
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </button>
+
+            <nav id="nav-header">
+
+                <ul class="nav-bar-list">
+                    <li> <a class="nav-bar-link" href="#home"> Home         </a> </li>
+                    <li> <a class="nav-bar-link" href="#aboutme"> About Me         </a> </li>
+                    <li> <a class="nav-bar-link" href="#skills"> Skills     </a> </li>
+                    <li> <a class="nav-bar-link" href="#progetti"> Progetti </a> </li>
+                    <li> <a class="nav-bar-link" href="#Contattami"> Contattami </a> </li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <section id="home" >
+
+            <div class="main-container-home" data-aos="fade-right">
+
+                <div class="home-container" >
+
+                    <div class="hero-text-side">
+                        <div class="text-hero-container">
+                            <h1>Enea Pozzi</h1>
+                        </div>
+                        <div class="text2-hero-container">
+                            <h3>Junior Web Developer</h3>
+                        </div>
+                    </div>
+
+                    <div class="home-foto">
+                        <img src="./assets/imgs/Foto profilo.png" alt="Foto profilo">
+                    </div>
+                </div>
+            </div>
+
+        </section> 
+
+        <div class="main-container">
+
+            <section id="aboutme" data-aos="fade-left">
+    
+                <div class="section-title">
+                    <h3 class="text-section-title">About Me</h3>
+                </div>
+
+                <div class="aboutme-container">
+
+                    <div class="aboutme-text-container">
+                        <p class="text-aboutme">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium 
+                            harum maxime pariatur porro temporibus delectus itaque 
+                            expedita nesciunt. Eos officiis sapiente quasi, sequi 
+                            earum sint? Numquam nemo excepturi suscipit fugiat. 
+                            Nesciunt, fugiat natus tenetur fuga facilis quaerat omnis, 
+                            distinctio fugit repudiandae minima obcaecati dolores hic 
+                            inventore consectetur numquam repellendus exercitationem.
+                        </p>
+                    </div>
+                    
+                    
+                    <div class="aboutme-learn-container">
+                        <div class="learn-card">
+                            <div class="learn-card-text-container">
+                                <p class="learn-card-text">
+                                    Cosa sto migliorando
+                                </p>
+                            </div>
+                            <div class="learn-card-icon-conatiner">
+                                <i class="fa-brands fa-html5" id="learn-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="skills" data-aos="fade-right">
+
+                <div class="section-title">
+                    <h3 class="text-section-title">Skills</h3>
+                </div>
+
+                <div class="swiper mySwiper" >
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="card-swiper" id="html-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">HTML</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-swiper" id="css-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">CSS</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-swiper" id="js-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">JS</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                              <div class="card-swiper" id="bootstrap-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">BOOTSTRAP</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-swiper" id="angular-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">ANGULAR</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-angular"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-swiper" id="react-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">REACT</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card-swiper" id="java-swiper-card">
+                                <div class="text-swiper-container" >
+                                    <span class="text-swiper-slide">JAVA</span>
+                                </div>
+                                <div class="icon-swiper-container">
+                                    <i class="fa-brands fa-java"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- frecce -->
+                    <div class="swiper-button-next button-swiper-skilss"></div>
+                    <div class="swiper-button-prev button-swiper-skilss"></div>
+                </div>
+            </section>
+
+
+            <section id="progetti" data-aos="fade-left">
+
+                <div class="section-title">
+                 <h3 class="text-section-title">Progetti</h3>
+                </div> 
+
+                <div class="swiper mySwiperProg">
+
+                    <div class="swiper-wrapper" id="wrapper-prog">
+                        
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog"href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="./assets/pages/PageProgTemp.html">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="#">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="card-swiper-prog">
+                                <a class="link-text-card-prog" href="#">
+                                    <h3 class="text-card-prog"> <span class="text-blu">N</span>ome <span class="text-blu">P</span>rogetto</h3> 
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                    <div class="swiper-button-next button-swiper-prog"></div>
+                    <div class="swiper-button-prev button-swiper-prog"></div>
+                
+                </div>
+
+
+                
+            
+            </section>
+
+
+            
+
+
+            <section id="Contattami" data-aos="fade-right">
+                
+                <div class="section-title">
+                    <h3 class="text-section-title">Contattami</h3>
+                </div> 
+
+                <div  class="container-formContatto">
+
+                    <div class="spiegazione-container-generale">
+
+                        <div class="container-spegazione">
+
+                           <div class="title-spiegazione-container">
+                               <h3 class="title-spiegazioni">Mandami un email</h3>
+                           </div>
+                            
+                           <div clas="text-spiegazione-container">
+
+                               <p class="text-spiegazioni">
+                                   Completa tutto il form.<br>
+                                   Riceverò il tuo messaggio, 
+                                   e ti rispondero al piu presto 
+                                </p>
+                                
+                            </div>
+
+                         </div>   
+                    </div>
+
+                    <div class="form-container">
+                            
+                        <form id="contact-form">
+
+                            <div class="form-row">
+                                <input type="text" id="name" name="name" placeholder="Nome" required />
+                                <input type="email" id="email" name="email" placeholder="Email" required />
+                            </div>
+
+                            <input type="text" id="title" name="title" placeholder="Oggetto" required />
+                            <textarea id="message" name="message" placeholder="Messaggio" required></textarea>
+                            <button type="submit" id="send-btn" disabled>Invia</button>
+                            
+                            <div id="status-msg" style="margin-top:5px; font-weight:bold;"></div>
+
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            
+                <div id="status-msg" style="margin-top:10px; font-weight:bold;"></div>
+
+            </section>
+
+        </div>
+        </main>
+
+        <footer id="footer">
+
+            <div class="footer-containers"> 
+                <div class="container-icon-footer">
+                    <i class="fa-solid fa-envelope icon-footer" ></i>
+                </div>
+                <div class="container-text-footer">
+                    <a href="mailto:eppsm2001@gmail.com" class="text-footer"> eppsm2001@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-containers" >
+                <div class="container-icon-footer">
+                    <i class="fa-solid fa-phone icon-footer" ></i>
+                </div>
+                <div class="container-text-footer">
+                    <a href="tel:+393456708732" class="text-footer"> (+39) 3456708732 </a>
+                </div>
+            </div>
+           
+            <div class="footer-containers" >
+                <div class="container-icon-footer">
+                    <i class="fa-brands fa-linkedin icon-footer" ></i>
+                </div>
+                <div class="container-text-footer">
+                    <a href="https://linkedin.com/in/enea-pozzi-319a321a9" class="text-footer" target="_blank">Il mio LinkedIn</a>
+                </div>
+            </div>
+            
+        </footer>
+            
+        
+        <!------ js ------>
+        
+        <!--- EmailJs --->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <!--- Swiper  --->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <!--- Libreria AOS  --->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--- Mio js  --->
+        <script src="./assets/js/main.js " ></script>
+        
+
+    </body>
+
+</html>

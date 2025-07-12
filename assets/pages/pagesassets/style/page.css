@@ -1,0 +1,176 @@
+
+/***** Variabili *****/
+:root {
+  --border-radius:30px;
+  --primary-bg-color: #374FEE;
+}
+
+/***** generale *****/
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 0 auto;
+
+}
+
+/***** header *****/
+
+#header{ justify-content: space-around}
+
+#prog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: stretch;
+  margin: 2rem 0
+}
+
+/***** title *****/
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  color:var(--primary-bg-color);
+  font-size:2rem;
+  font-weight: bold;
+}
+
+
+/***** general container *****/
+
+.container-general-text,
+.container-media {
+  flex: 1 1 45%;
+}
+
+
+/***** general container/text *****/
+
+.container-general-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spiegazione-container{
+  flex:none;
+  margin: 1rem 0 ;
+}
+
+.visit-link{
+  display: block;
+  margin-top:0.8rem;
+}
+
+.visit-link a {
+  display: block;
+  font-size:1.2rem;
+  font-weight: bold;
+  color: var(--primary-bg-color);
+}
+
+/***** general container/img *****/
+.container-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  max-width: 500px;
+  max-height: 500px;
+}
+
+/***** swiper *****/
+
+@media (max-width: 880px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .container-general-text,
+  .container-media {
+    width: 100%;
+  }
+
+  .img-prog {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  
+  .main-container {
+    height: auto;
+  }
+
+  #prog {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-general-text,
+  .container-media {
+    width: 50%;
+  }
+
+  .img-prog {
+    max-width: 100%;
+  }
+}
+
+/* Titolo centrato verticalmente con immagine */
+/* Contenitore Swiper */
+
+.swiper {
+  max-width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper{
+  height: 80px;
+  margin-top: 0;
+}
+
+.swiper slide{height: fit-content;}
+
+.swiper-slide i {
+    transform:none;
+    font-size: 4rem;
+}
+
+
+
+
