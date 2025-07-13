@@ -1,20 +1,17 @@
-/* gestione effetto border radius su navbar */ 
 
-const header = document.getElementById('header');
-const homeSection = document.getElementById('home');
+/* gestione menu burger */
+const menuToggle = document.getElementById('menu-toggle');
+const navHeader = document.getElementById('nav-header');
 
-window.addEventListener('scroll', () => {
-  const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('open');
 
-  if (window.scrollY > homeBottom - 100) { 
-    header.classList.add('rounded');
+  if (navHeader.style.maxHeight && navHeader.style.maxHeight !== "0px") {
+    navHeader.style.maxHeight = "0";
   } else {
-    header.classList.remove('rounded');
+    navHeader.style.maxHeight = 240 + "px";
   }
 });
-
-
-
 
 /* Per lo swiper */
 document.addEventListener("DOMContentLoaded", () => {
