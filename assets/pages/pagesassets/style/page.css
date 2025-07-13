@@ -105,6 +105,50 @@ html, body {
 
 /***** swiper *****/
 
+
+/* Contenitore Swiper */
+
+.swiper {
+  max-width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper{
+  height: 80px;
+  margin-top: 0;
+}
+
+.swiper slide{height: fit-content;}
+
+.swiper-slide i {
+  transform:none;
+  font-size: 4rem;
+}
+
+
+.swiper-slide {
+  opacity: 0.4;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: #aaa;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.2);
+  color:black
+}
+
+.swiper-button-prev,
+.swiper-button-next {color: var(--primary-bg-color)}
+
 @media (max-width: 880px) {
   .main-container {
     flex-direction: column;
@@ -128,6 +172,9 @@ html, body {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+
+  .swiper {
+    max-width: 275px;}
   
   .main-container {
     height: auto;
@@ -138,39 +185,18 @@ html, body {
     align-items: center;
   }
 
+  .swiper-slide {width: 60px ;}
+
+  .swiper-slide-active {width: 60px;}
+
   .container-general-text,
   .container-media {
     width: 50%;
   }
 
+  .swiper-button-prev,.swiper-button-next{display: none;}
+
   .img-prog {
     max-width: 100%;
   }
 }
-
-/* Titolo centrato verticalmente con immagine */
-/* Contenitore Swiper */
-
-.swiper {
-  max-width: 500px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-wrapper{
-  height: 80px;
-  margin-top: 0;
-}
-
-.swiper slide{height: fit-content;}
-
-.swiper-slide i {
-    transform:none;
-    font-size: 4rem;
-}
-
-
-
-
