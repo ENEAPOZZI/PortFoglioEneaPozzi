@@ -13,7 +13,7 @@ menuToggle.addEventListener('click', () => {
   }
 });
 
-/* Per lo swiper */
+/*  Per lo swiper 
 document.addEventListener("DOMContentLoaded", () => {
   const swipertech = new Swiper(".swipertech", {
     loop: true,
@@ -34,6 +34,29 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+}); */ 
+
+
+
+/* swiper progetti */ 
+const swiperproge = new Swiper(".mySwiperProg", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  pagination: { el: '.swiper-pagination', clickable: false },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 /* Per gestire le animazioni*/
