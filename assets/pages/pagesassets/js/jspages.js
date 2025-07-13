@@ -36,10 +36,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 }); */ 
 
-
-
 /* swiper progetti */ 
 const swiperproge = new Swiper(".mySwiperProg", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  centeredSlides: true,
+  pagination: { el: '.swiper-pagination', clickable: false },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+/* swiper progetti per mobile */ 
+const swiperproge2 = new Swiper(".mySwiperProg2", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 0,

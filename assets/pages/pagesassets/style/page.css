@@ -113,8 +113,6 @@ html, body {
   color: inherit;
 }
 
-
-
 #menu-toggle {
   width: 30px;
   height: 24px;
@@ -283,6 +281,8 @@ html, body {
   align-items: center;
 }
 
+.mySwiperProg2{display: none;}
+
 .swiper-wrapper{
   height: 80px;
   margin-top: 0;
@@ -339,6 +339,11 @@ html, body {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
+
+  .mySwiperProg{display: none;}
+
+  .mySwiperProg2{display: block;}
+
 
   .swiper {
     max-width: 275px;}
