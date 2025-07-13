@@ -23,6 +23,7 @@ html, body {
   margin: 0 auto;
 
 }
+.img-mobile{display: none;}
 
 /***** header *****/
 
@@ -364,5 +365,15 @@ html, body {
 
   .img-prog {
     max-width: 100%;
+    display: none;
+  } 
+
+  .img-mobile{
+    display: block;
+    width: 95%;
+    padding: 18px;
+    object-fit: cover;
+    margin: 5px;
   }
+
 }
