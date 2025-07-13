@@ -188,9 +188,6 @@ html, body {
 
 }
 
-
-
-
 /***** main *****/
 
 #prog {
@@ -315,6 +312,9 @@ html, body {
 
 .swiper-button-prev,
 .swiper-button-next {color: var(--primary-bg-color)}
+
+
+#wrapper-prog { margin-top: 0;}
 
 @media (max-width: 880px) {
   .main-container {
