@@ -1,3 +1,21 @@
+/* gestione effetto border radius su navbar */ 
+
+const header = document.getElementById('header');
+const homeSection = document.getElementById('home');
+
+window.addEventListener('scroll', () => {
+  const homeBottom = homeSection.offsetTop + homeSection.offsetHeight;
+
+  if (window.scrollY > homeBottom - 100) { 
+    header.classList.add('rounded');
+  } else {
+    header.classList.remove('rounded');
+  }
+});
+
+
+
+
 /* Per lo swiper */
 document.addEventListener("DOMContentLoaded", () => {
   const swipertech = new Swiper(".swipertech", {
