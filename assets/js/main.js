@@ -176,7 +176,7 @@ form.addEventListener('submit', function(e) {
     message: form.message.value
   })
   .then(() => {
-    statusMsg.style.color = 'green';
+    statusMsg.style.color = 'white';
     statusMsg.textContent = 'Messaggio inviato con successo!';
     form.reset();
     sendBtn.textContent = 'Invia';
