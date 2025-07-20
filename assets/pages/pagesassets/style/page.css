@@ -241,6 +241,7 @@ html, body {
 .visit-link{
   display: block;
   margin-top:0.8rem;
+  
 }
 
 .visit-link a {
@@ -248,6 +249,7 @@ html, body {
   font-size:1.2rem;
   font-weight: bold;
   color: var(--primary-bg-color);
+  cursor: pointer;
 }
 
 /***** general container/img *****/
